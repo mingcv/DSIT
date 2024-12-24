@@ -52,10 +52,10 @@ Setting II (w/ Nature): ```eval_sirs.py --name dsit_large_setting2_eval_epoch66 
 
 Download the trained weights by [Google Drive](https://drive.google.com/drive/folders/1mImdAZdc2kUlJ1RWwzgaNon60jzpZfCh?usp=drive_link) and drop them into the "weights" dir.
 
-#### Visual comparison on real20 and SIR^2
+### Visual comparison on real20 and SIR^2
 ![image](https://github.com/mingcv/DSIT/blob/main/assets/visual_comp.jpg)
 
-#### Generalizability on Our Additionally Captured Real World Cases
+### Generalizability on Our Additionally Captured Real World Cases
 ![image](https://github.com/mingcv/DSIT/blob/main/assets/visual_comp_extra.jpg)
 
 
