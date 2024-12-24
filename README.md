@@ -10,15 +10,14 @@
 > [Qiming Hu](https://scholar.google.com/citations?user=4zasPbwAAAAJ), [Hainuo Wang](https://scholar.google.com/citations?user=Z2RcbF4AAAAJ), [Xiaojie Guo](https://sites.google.com/view/xjguo/homepage) <br>
 > College of Intelligence and Computing, Tianjin University
 
-### Network Architecture
+### 1. Network Architecture
 <p align="center">
   <img src="assets/fig_arch_final.jpg">
 </p>
 
-### Environment Preparation (Python 3.9)
+### 2. Environment Preparation (Python 3.9)
 ```pip install -r requirements.txt```
-### Data Preparation
-
+### 3. Data Preparation
 
 #### Training dataset
 * 7,643 images from the
@@ -33,7 +32,7 @@
 * 454 real testing pairs from [SIR^2 dataset](https://sir2data.github.io/), containing three subsets (i.e., Objects (200), Postcard (199), Wild (55)). 
 
 Download all in one by [Google Drive](https://drive.google.com/file/d/1hFZItZAzAt-LnfNj-2phBRwqplDUasQy/view?usp=sharing) or [百度云](https://pan.baidu.com/s/15zlk5o_-kx3ruKj4KfOvtA?pwd=1231).
-### Usage
+### 4. Usage
 
 #### Training 
 Setting I (w/o Nature): ```python train_sirs_setting1.py --name dsit_large_train_setting1 --arch dsit_large --model dsit_model_sirs_lrm --dataset sirs_dataset --loss losses  --lambda_vgg 0.01 --lambda_rec 0.2 --size_rounded --seed 2024 --backbone_weight_path "./weights/swin_large_o365_finetune.pth" --base_dir "YOUR_DATA_DIR]" --batchSize 1```
@@ -48,14 +47,14 @@ Setting II (w/ Nature): ```eval_sirs.py --name dsit_large_setting2_eval_epoch66 
 #### Testing
 ```python test_sirs.py --name dsit_large_setting2_test_epoch66 --arch dsit_large --model dsit_model_sirs_lrm --dataset sirs_dataset  --size_rounded --test_nature --weight_path "./weights/dist-large-setting2-epoch66.pth" --backbone_weight_path "./weights/swin_large_o365_finetune.pth" --test_dir "[YOUR_TESTING_DATA_DIR]"```
 
-### Trained weights
+### 5. Trained weights
 
 Download the trained weights by [Google Drive](https://drive.google.com/drive/folders/1mImdAZdc2kUlJ1RWwzgaNon60jzpZfCh?usp=drive_link) or [百度云](https://pan.baidu.com/s/1eBIrBm877MKeQMGnXHJskg?pwd=dqps) and drop them into the "weights" dir.
 
-### Visual comparison on real20 and SIR^2
+### 6. Visual comparison on real20 and SIR^2
 ![image](https://github.com/mingcv/DSIT/blob/main/assets/visual_comp.jpg)
 
-### Generalizability on Our Additionally Captured Real World Cases
+### 7. Generalizability on Our Additionally Captured Real World Cases
 ![image](https://github.com/mingcv/DSIT/blob/main/assets/visual_comp_extra.jpg)
 
 
