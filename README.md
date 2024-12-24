@@ -50,7 +50,7 @@ Setting II (w/ Nature): ```eval_sirs.py --name dsit_large_setting2_eval_epoch66 
 
 ### Trained weights
 
-Download the trained weights by [Google Drive](https://drive.google.com/drive/folders/1mImdAZdc2kUlJ1RWwzgaNon60jzpZfCh?usp=drive_link) and drop them into the "weights" dir.
+Download the trained weights by [Google Drive](https://drive.google.com/drive/folders/1mImdAZdc2kUlJ1RWwzgaNon60jzpZfCh?usp=drive_link) or [百度云](https://pan.baidu.com/s/1eBIrBm877MKeQMGnXHJskg?pwd=dqps) and drop them into the "weights" dir.
 
 ### Visual comparison on real20 and SIR^2
 ![image](https://github.com/mingcv/DSIT/blob/main/assets/visual_comp.jpg)
