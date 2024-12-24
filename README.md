@@ -48,7 +48,7 @@ Setting II (w/ Nature): ```eval_sirs.py --name dsit_large_setting2_eval_epoch66 
 #### Testing
 ```python test_sirs.py --name dsit_large_setting2_test_epoch66 --arch dsit_large --model dsit_model_sirs_lrm --dataset sirs_dataset  --size_rounded --test_nature --weight_path "./weights/dist-large-setting2-epoch66.pth" --backbone_weight_path "./weights/swin_large_o365_finetune.pth" --test_dir "[YOUR_TESTING_DATA_DIR]"```
 
-#### Trained weights
+### Trained weights
 
 Download the trained weights by [Google Drive](https://drive.google.com/drive/folders/1mImdAZdc2kUlJ1RWwzgaNon60jzpZfCh?usp=drive_link) and drop them into the "weights" dir.
 
